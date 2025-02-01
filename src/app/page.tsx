@@ -167,7 +167,7 @@ export default function Home() {
                   onChange={(e) => setCurrentInput(e.target.value)}
                   className="text-lg flex-1"
                   placeholder="Ej: (2x^2) + 3x - 5"
-                  disabled 
+                  disabled
                 />
                 <Button onClick={agregarPolinomio} variant="outline" className="shrink-0">
                   <Send className="h-4 w-4" />
@@ -282,6 +282,20 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
+      <footer className="p-4 bg-primary/10 text-center border-t">
+        <p className="text-sm">
+          ¿Quieres saber más de mí como desarrollador o adquirir un software personalizado?{" "}
+          <a
+            href="https://carloshernandez.site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary font-bold underline hover:no-underline"
+          >
+            Visita mi portafolio
+          </a>
+        </p>
+      </footer>
+
     </div>
   )
 }
